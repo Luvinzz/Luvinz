@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luvinz Digital Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Luvinz</h1>
+    <p>Real Digital Products That Solve Problems</p>
+  </header>
+
+  <main>
+    <section class="product">
+      <h2>Awesome Digital Product</h2>
+      <p>Track, plan, or solve a real problem with this tool.</p>
+      <img src="images/product-image.jpg" alt="Digital Product" width="300">
+
+      <!-- Stripe Buy Button -->
+      <form action="https://buy.stripe.com/test_YOURPRODUCTLINK" method="POST">
+        <button type="submit" class="buy-btn">Buy with Stripe</button>
+      </form>
+
+      <!-- PayPal Buy Button -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID">
+        <input type="submit" value="Buy with PayPal" class="buy-btn">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Luvinz. All rights reserved.</p>
+  </footer>
+</body>
+</html>
